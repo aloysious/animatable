@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>demo标题</title>
+	<script src="http://a.tbcdn.cn/s/kissy/1.3.0/kissy.js" charset="utf-8"></script>
+	<script src="http://leaverou.github.com/prefixfree/prefixfree.min.js"></script>
+	<style>
+		a {
+			position: relative;
+			float: left;
+			width: 150px;
+			height: 150px;
+			box-sizing: border-box;
+			margin: 0 15px 30px;
+			background: slateGray;
+			color: white;
+			font-size: 60px;
+			line-height: 150px;
+			text-align: center;
+			counter-increment: demo;
+			cursor: pointer;
+		}
+		a:not(:hover) {
+			animation: none !important;
+		}
+	</style>
+</head>
+<body>
+	<h2>demo标题</h2>
+	<a id="demo1" data-property="background-color" data-from="slategray" data-to="black">1</a>
+	<a id="demo2" data-property="background-position" data-from="0 0" data-to="100% 100%" style="background-image: linear-gradient(-45deg, transparent 25%, black 25%, black 50%, transparent 50%, transparent 75%, black 75%, black); background-size:50px 50px">2</a>
+	<a id="demo3" data-property="background-position" data-from="3px 0, 3px 0, 15px -150px, 15px -150px" data-to="3px -70px, 3px -70px, 15px -80px, 15px -80px" style="background-color: #E04332; background-repeat: repeat-x; background-size: 24px 300px; background-image: linear-gradient(-45deg, slategray 25%, transparent 25%), linear-gradient(45deg, transparent 75%, slategray 75%), linear-gradient(45deg, slategray 25%, transparent 25%), linear-gradient(-45deg, transparent 75%, slategray 75%);" data-author="kizmarh">3</a>
+	<a id="demo4" data-property="background-size" data-from="5px 5px" data-to="150px 150px" style="background-image: repeating-radial-gradient(transparent, transparent 9px, black 11px, black 20px); background-position:center">4</a>
+	<a id="demo5" data-property="border-radius" data-from="0" data-to="50%">5</a>
+	<a id="demo6" data-property="border-radius" data-from="0 100%" data-to="100% 0">6</a>
+	<a id="demo7" data-property="border-width" data-from="0" data-to="75px" style="border-style:solid; border-color: black;">7</a>
+	<a id="demo8" data-property="border-width" data-from="0" data-to="35px" style="border-style:dashed; border-color: black;">8</a>
+	<a id="demo9" data-property="border-width" data-from="0" data-to="75px" style="border-style:double; border-color: black;">9</a>
+	<a id="demo10" data-property="box-shadow" data-from="0 0 black" data-to="0 150px 10px -50px rgba(0,0,0,.5)">10</a>
+	<a id="demo11" data-property="box-shadow" data-from="none" data-to="inset -75px -75px 400px #000" data-author="yuritkachenko">11</a>
+	<a id="demo12" data-property="box-shadow" data-from="inset 0 0 75px 75px slategray, 0 0 0 slategray" data-to="inset 0 0 35px 35px transparent, 0 0 75px 50px transparent" style="background: transparent; border-radius: 1px;" data-author="kizmarh">12</a>
+	<a id="demo13" data-property="color" data-from="white" data-to="black">13</a>
+	<a id="demo14" data-property="font-size" data-from="60px" data-to="300px">14</a>
+	<a id="demo15" data-property="height" data-from="150px" data-to="0">15</a>
+	<a id="demo16" data-property="letter-spacing" data-from="0" data-to="100px">16</a>
+	<a id="demo17" data-property="line-height" data-from="10px" data-to="300px">17</a>
+	<a id="demo18" data-property="opacity" data-from="1" data-to="0">18</a>
+	<a id="demo19" data-property="outline-width" data-from="0" data-to="100px" style="outline-color:black; outline-style: solid;">19</a>
+	<a id="demo20" data-property="outline-offset" data-from="-5px" data-to="30px" style="outline-style: dashed; outline-color:slategray;" data-author="mkuehnel">20</a>
+	<a id="demo21" data-property="outline-color" data-from="transparent" data-to="red" style="outline-width: 30px; outline-style: solid;" data-author="mkuehnel">21</a>
+	<a id="demo22" data-property="padding" data-from="0" data-to="50px 200px 50px 50px" data-author="steno">22</a>
+	<a id="demo23" data-property="text-indent" data-from="0" data-to="100px">23</a>
+	<a id="demo24" data-property="text-shadow" data-from="0 0 black" data-to="20px 20px 10px rgba(0,0,0,.5)">24</a>
+	<a id="demo25" data-property="text-shadow" data-from="0 0 0 white" data-to="0 0 10px white" style="color: transparent;" data-author="bartaz">25</a>
+	<a id="demo26" data-property="text-shadow" data-from="0 0 white" data-to="0 0 rgba(255,255,255,0), -45px -45px 0 red, -30px -30px 0 orange, -15px -15px 0 yellow, 0 0 0 green, 15px 15px 0 blue, 30px 30px 0 indigo, 45px 45px 0 violet" style="color: transparent" data-author="kizmarh">26</a>
+	<a id="demo27" data-property="top" data-from="0" data-to="100px" style="position:relative">27</a>
+	<a id="demo28" data-property="transform" data-from="rotate(0deg)" data-to="rotate(360deg)">28</a>
+	<a id="demo29" data-property="transform" data-from="scale(1)" data-to="scale(2)">29</a>
+	<a id="demo30" data-property="transform" data-from="skewX(0deg)" data-to="skewX(180deg)">30</a>
+	<a id="demo31" data-property="transform" data-from="rotate(0deg) scale(1)" data-to="rotate(360deg) scale(0)">31</a>
+	<a id="demo32" data-property="transform" data-from="perspective(400px) rotateY(0deg)" data-to="perspective(400px) rotateY(360deg)">32</a>
+	<a id="demo33" data-property="transform" data-from="perspective(400px) rotateX(0deg)" data-to="perspective(400px) rotateX(360deg)" data-author="calvein">33</a>
+	<a id="demo34" data-property="transform" data-from="perspective(400px) rotateY(0deg)" data-to="perspective(400px) translateZ(150px) rotateY(180deg)" data-author="bartaz">34</a>
+	<a id="demo35" data-property="transform" data-from="perspective(400px) translate3d(0,0,0) rotateX(0) rotateY(0) rotateZ(0)" data-to="perspective(400px) translate3d(0,0,-5000px) rotateX(720deg) rotateY(360deg) rotateZ(-360deg)" data-author="bartaz">35</a>
+	<a id="demo36" data-property="transform" data-from="perspective(400px) rotate3d(1,1,0,0deg)" data-to="perspective(400px) rotate3d(1,1,0,180deg)" data-author="bartaz">36</a>
+	<a id="demo37" data-property="transform" data-from="perspective(400px) rotate3d(0,1,0,0deg)" data-to="perspective(400px) rotate3d(0,1,0,-180deg)" data-author="filipearaujo" style="transform-origin: 100% 50%;">37</a>
+	<a id="demo38" data-property="transform-origin" data-from="50% 50%" data-to="0 100%" style="transform:rotate(45deg)">38</a>
+	<a id="demo39" data-property="width" data-from="150px" data-to="330px" data-author="mkuehnel">39</a>
+
+<script>
+    var S = KISSY;
+    if (S.Config.debug) {
+        var srcPath = "../../../";
+        S.config({
+            packages:[
+                {
+                    name:"gallery",
+                    path:srcPath,
+                    charset:"utf-8",
+                    ignorePackageNameInUri:true
+                }
+            ]
+        });
+    }
+
+    S.use('gallery/animatable/1.0/index', function (S, Animatable) {
+         var animatable = new Animatable('#demo1');
+         var animatable = new Animatable('#demo2');
+         var animatable = new Animatable('#demo3');
+         var animatable = new Animatable('#demo4');
+         var animatable = new Animatable('#demo5');
+         var animatable = new Animatable('#demo6');
+         var animatable = new Animatable('#demo7');
+         var animatable = new Animatable('#demo8');
+         var animatable = new Animatable('#demo9');
+         var animatable = new Animatable('#demo10');
+         var animatable = new Animatable('#demo11');
+         var animatable = new Animatable('#demo12');
+         var animatable = new Animatable('#demo13');
+         var animatable = new Animatable('#demo14');
+         var animatable = new Animatable('#demo15');
+         var animatable = new Animatable('#demo16');
+         var animatable = new Animatable('#demo17');
+         var animatable = new Animatable('#demo18');
+         var animatable = new Animatable('#demo19');
+         var animatable = new Animatable('#demo20');
+         var animatable = new Animatable('#demo21');
+         var animatable = new Animatable('#demo22');
+         var animatable = new Animatable('#demo23');
+         var animatable = new Animatable('#demo24');
+         var animatable = new Animatable('#demo25');
+         var animatable = new Animatable('#demo26');
+         var animatable = new Animatable('#demo27');
+         var animatable = new Animatable('#demo28');
+         var animatable = new Animatable('#demo29');
+         var animatable = new Animatable('#demo30');
+         var animatable = new Animatable('#demo31');
+         var animatable = new Animatable('#demo32');
+         var animatable = new Animatable('#demo33');
+         var animatable = new Animatable('#demo34');
+         var animatable = new Animatable('#demo35');
+         var animatable = new Animatable('#demo36');
+         var animatable = new Animatable('#demo37');
+         var animatable = new Animatable('#demo38');
+         var animatable = new Animatable('#demo39');
+    })
+</script>
+</body>
+</html>
